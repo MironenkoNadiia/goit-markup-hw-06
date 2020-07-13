@@ -379,29 +379,6 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* .projects-description {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-weight: 400px;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 18px;
-line-height: 1.55;
-letter-spacing: 0.03em;
-padding: 63px 24px;
-}
-
-.projects-description:hover {
-  transition: var(--hover);
-  background-color: rgba(33, 150, 243, 0.9);
-  opacity: 1;
-  color: var(--white-color);
-} */
 .wow {
   position: relative;
   overflow: hidden;
@@ -467,6 +444,8 @@ top: 63px;
   cursor: pointer;
   padding: 10px 32px;
   border: none;
+  width: 200px;
+  height: 50px;
 }
 .button.secondry {
   color: var(--white-color);
@@ -746,12 +725,14 @@ pointer-events: none;
 
 .form-field {
   position: relative;
+  
 }
 
-.space:hover+.label{
+.space:focus+.label{
   color: var(--accent-color);
   transform: translateY(-32px);
 }
+
 
 
 .label {
@@ -774,7 +755,9 @@ letter-spacing: 0.01em;
   height: 40px;
   margin-bottom: 28px;
   cursor: pointer;
+  padding-left: 42px;
 }
+
 .comment {
   position: relative;
 }
@@ -799,7 +782,7 @@ letter-spacing: 0.01em;
   margin-bottom: 20px;
 }
 
-.comment:hover .label-comment  {
+.comment:focus .label-comment  {
   color: var(--accent-color);
   transform: translateY(-36px);
 }
@@ -807,7 +790,7 @@ letter-spacing: 0.01em;
   transform: translateY(-36px);
 }
 
-.name-icon {
+.name.icon {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -815,7 +798,7 @@ letter-spacing: 0.01em;
   left: 60px;
 }
 
-.tel-icon {
+.tel.icon {
   position: absolute;
   width: 13px;
   height: 13px;
@@ -823,7 +806,7 @@ letter-spacing: 0.01em;
   left: 60px;
 }
 
-.e-mail-icon {
+.e-mail.icon {
   position: absolute;
   width: 15px;
   height: 12px;
@@ -833,6 +816,10 @@ letter-spacing: 0.01em;
 
 .accept {
   margin-bottom: 30px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .icon-cross {
@@ -846,3 +833,22 @@ letter-spacing: 0.01em;
   padding: 7px;
 }
 
+.accent {
+  color: var(--accent-color);
+}
+
+.space:focus~.icon {
+  fill: var(--accent-color);
+}
+
+
+
+.space:hover,
+.space:focus {
+  border: 1px solid #2196F3;
+}
+
+.comment-space:focus+.label-comment {
+  color: var(--accent-color);
+  transform: translateY(-32px);
+}
