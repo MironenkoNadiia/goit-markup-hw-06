@@ -447,7 +447,10 @@ top: 63px;
   width: 200px;
   height: 50px;
 }
-.button.secondry {
+
+
+
+.button.secondary {
   color: var(--white-color);
   background-color: var(--footer-background);
   font-weight: 400;
@@ -657,6 +660,7 @@ fill: #AFB1B8;
   background-color:rgba(255, 255, 255, 0.1);
   cursor: pointer;
   margin-bottom: 24px;
+  margin-left: 10px;
 }
 
 .social-footer-icon {
@@ -664,6 +668,7 @@ fill: #AFB1B8;
   height: 20px;
   fill: var(--white-color);
 }
+
 
 .social:hover{
 background-color: var(--accent-color);
@@ -826,8 +831,8 @@ letter-spacing: 0.01em;
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  width: 17px;
+  height: 17px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 7px;
@@ -881,4 +886,44 @@ background-color: transparent;
 
 .accept-icon {
   margin-left: 9px;
+}
+
+.subscribe-section {
+  margin-right: 12px;
+}
+.subscribe {
+  
+  width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+background-color: var(--footer-background);
+}
+
+.e-mail {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+
+.e-mail-button {
+position: relative;
+}
+
+.send::after {
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-image: url(../img/vector/icon\ send.svg);
+  align-items: center;
+  margin-right: 10px;
+  background-size: contain;
+  background-position: center;
+}
+
+.flex-base {
+  display: flex;
+  align-items: baseline;
 }
