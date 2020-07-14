@@ -852,3 +852,33 @@ letter-spacing: 0.01em;
   color: var(--accent-color);
   transform: translateY(-32px);
 }
+
+.accept {
+  display: flex;
+  align-items: center;
+  margin-left: 54px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+.checkbox:checked+.accept-icon {
+background-color: var(--accent-color);
+background-image: url(../img/vector/icon\ check.svg);
+background-size: contain;
+background-color: transparent;
+}
+
+.accept-icon {
+  margin-left: 9px;
+}
