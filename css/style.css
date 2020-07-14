@@ -911,7 +911,9 @@ background-color: var(--footer-background);
 .e-mail-button {
 position: relative;
 }
-
+.send {
+  align-self: center;
+}
 .send::after {
   content: "";
   height: 24px;
