@@ -48,7 +48,7 @@
             <div class="modal">
               <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
               <form class="form">
-                <svg class="icon-cross">
+                <svg data-modal-close  class="icon-cross">
                 <use href="./img/sprite3.svg#icon-cross"></use>
                 </svg>
                 <ul>
@@ -86,7 +86,7 @@
                   </label>
                 </div>
               </form>
-              <button data-modal-close class="button primary">Отправить</button>
+              <button class="button primary">Отправить</button>
             </div>
             </div>
         </div>
@@ -426,12 +426,18 @@
           </div>
           <div class="subscribe-section">
             <h4 class="footer flex">Подпишитесь на рассылку</h4>
-            <div class="e-mail-button">
-              <input class="subscribe" type="text" name="e-mail" >
+            
+            <form class="e-mail-button"  action="e-mail">
+              <input class="subscribe" type="text" name="e-mail" placeholder=" " >
               <label class="e-mail" for="e-mail">E-mail</label>
-            </div>
-          </div>
-            <button class="button primary send ">Подписаться</button>
+              
+            
+              <button class="send ">Подписаться
+                <svg class="send-icon">
+                  <use href="./img/sprite3.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
           
         </div>
     

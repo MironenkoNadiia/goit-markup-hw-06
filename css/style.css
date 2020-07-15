@@ -831,11 +831,12 @@ letter-spacing: 0.01em;
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 17px;
-  height: 17px;
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 7px;
+  cursor: pointer;
 }
 
 .accent {
@@ -909,21 +910,42 @@ background-color: var(--footer-background);
 }
 
 .e-mail-button {
+  display: flex;
 position: relative;
 }
+.subscribe:focus+.e-mail {
+  color: transparent;
+}
+
+.subscribe:not(:placeholder-shown)+e.mail {
+  color: transparent;
+}
 .send {
-  align-self: center;
-}
-.send::after {
-  content: "";
-  height: 24px;
-  width: 24px;
-  background-image: url(../img/vector/icon\ send.svg);
+  display: flex;
   align-items: center;
-  margin-right: 10px;
-  background-size: contain;
-  background-position: center;
+  align-self: center;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  padding: 10px 32px;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+margin-left: 12px;
 }
+
+.send-icon {
+  
+  width: 24px;
+  height: 24px;
+margin-left: 10px;
+}
+
 
 .flex-base {
   display: flex;
