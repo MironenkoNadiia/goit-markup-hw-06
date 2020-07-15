@@ -917,7 +917,7 @@ position: relative;
   color: transparent;
 }
 
-.subscribe:not(:placeholder-shown)+e.mail {
+.subscribe:not(:placeholder-shown)+ .e-mail {
   color: transparent;
 }
 .send {
